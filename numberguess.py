@@ -9,6 +9,11 @@ print(guess, type(guess))
 
 if guess-answer==0:
     print('Correct!')
-else:
-    print('Wrong! The answer was {}.'.format(answer))
+elif guess>answer:
+    print('Down!')
+elif guess<answer:
+    print('Up!')
+
+
+    
 
