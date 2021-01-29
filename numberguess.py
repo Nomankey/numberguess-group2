@@ -4,15 +4,24 @@ import random
 answer = random.randint(1,100)
 print('DEBUG: {}'.format(answer))
 
-guess = int(input('Guess the number(1-100): '))
-print(guess, type(guess))
+chance = 5      # 임의로 정한 수입니다  
 
-if guess-answer==0:
-    print('Correct!')
-elif guess>answer:
-    print('Down!')
-elif guess<answer:
-    print('Up!')
+while chance > 0:
+    guess = int(input('Guess the number(1-100): '))
+    print(guess))
+
+    if guess-answer==0:
+        print('Correct!')
+    elif guess<answer:
+        print('Up!')
+    elif guess>answer:
+    chance -= 1
+        print('Down!')
+    
+
+    if chance == 0:
+        print('Wrong! The answer was {}'.format(answer))
+         
 
 
     
