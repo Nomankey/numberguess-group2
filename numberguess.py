@@ -1,6 +1,6 @@
 import random
 
-user_id = str(input("What is Your Name? "))
+user_id = input("What is Your Name? ")
 answer = random.randint(1,100)
 print('DEBUG: {}'.format(answer))
 
